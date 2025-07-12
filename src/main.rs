@@ -22,7 +22,7 @@ fn clear_screen() {
 
 fn pause_until_any_key() {
     let mut buffer = String::new();
-    print!("Premi invio per continuare...");
+    print!("Press <any key> to continue");
     io::stdout().flush().unwrap();
     io::stdin().read_line(&mut buffer).unwrap();
 }
